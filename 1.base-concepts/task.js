@@ -2,7 +2,7 @@
 function solveEquation(a, b, c) {
   let discriminant = b ** 2 - 4 * a * c;
   let roots = [];
-}
+
 
 if (discriminant < 0) {
   return roots;
@@ -14,9 +14,9 @@ if (discriminant === 0) {
   return roots;
 }
 
-if (discriminant === 0) {
-  let root = -b / (2 * a);
-  roots.push(root);
+  let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+  let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+  roots.push(root1, root2);
   return roots;
 }
 
