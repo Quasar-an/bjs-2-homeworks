@@ -1,10 +1,21 @@
-"use strict"
+"use strict";
 function solveEquation(a, b, c) {
-  let arr = [];
-  
-  return arr;
+  let discriminant = b ** 2 - 4 * a * c;
+  let roots = [];
 }
 
-function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-  
+if (discriminant < 0) {
+  return roots;
+}
+
+if (discriminant === 0) {
+  let root = -b / (2 * a);
+  roots.push(root);
+  return roots;
+}
+
+if (discriminant === 0) {
+  let root = -b / (2 * a);
+  roots.push(root);
+  return roots;
 }
